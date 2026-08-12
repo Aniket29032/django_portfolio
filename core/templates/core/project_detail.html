@@ -1,0 +1,416 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>{{ project.title }} | Aniket Bhadauria</title>
+
+    <link rel="stylesheet"
+          href="{% static 'core/css/style.css' %}">
+
+    <link rel="stylesheet"
+          href="{% static 'core/css/project_detail.css' %}">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- PhotoSwipe CSS -->
+
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/photoswipe@5/dist/photoswipe.css">
+
+</head>
+
+<body>
+
+<!-- ===========================
+            NAVBAR
+============================ -->
+
+<nav class="detail-navbar">
+
+    <div class="container">
+
+        <a href="{% url 'home' %}"
+           class="back-link">
+
+            <i class="fas fa-arrow-left"></i>
+
+            Back to Portfolio
+
+        </a>
+
+    </div>
+
+</nav>
+
+
+<!-- ===========================
+            HERO
+============================ -->
+
+<section class="project-hero">
+
+    <div class="container">
+
+        <div class="project-heading">
+
+            <span class="project-label">
+
+                Featured Project
+
+            </span>
+
+            <h1>
+
+                {{ project.title }}
+
+            </h1>
+
+            <p class="hero-description">
+
+                {{ project.short_description }}
+
+            </p>
+
+        </div>
+
+        <div class="hero-image">
+
+            <img src="{{ project.image.url }}"
+                 alt="{{ project.title }}">
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ===========================
+        PROJECT OVERVIEW
+============================ -->
+
+<section class="overview-section">
+
+    <div class="container">
+
+        <h2>
+
+            Project Overview
+
+        </h2>
+
+        <p>
+
+            {{ project.full_description }}
+
+        </p>
+
+    </div>
+
+</section>
+
+<!-- ===========================
+        KEY FEATURES
+============================ -->
+
+<section class="features-section">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <h2>
+
+                Key Features
+
+            </h2>
+
+            <p>
+
+                Core functionalities and highlights of this project.
+
+            </p>
+
+        </div>
+
+        <div class="feature-grid">
+
+            {% for feature in project.features.all %}
+
+            <div class="feature-card">
+
+                <div class="feature-icon">
+
+                    <i class="fas fa-circle-check"></i>
+
+                </div>
+
+                <div class="feature-content">
+
+                    <h4>
+
+                        {{ feature.title }}
+
+                    </h4>
+
+                </div>
+
+            </div>
+
+            {% empty %}
+
+            <div class="gallery-empty">
+
+                <i class="fas fa-list-check"></i>
+
+                <p>
+
+                    No features have been added yet.
+
+                </p>
+
+            </div>
+
+            {% endfor %}
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ===========================
+        TECHNOLOGY STACK
+============================ -->
+
+<section class="technology-section">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <h2>
+
+                Technology Stack
+
+            </h2>
+
+            <p>
+
+                Technologies, frameworks and tools used to build this project.
+
+            </p>
+
+        </div>
+
+        <div class="technology-grid">
+
+            {% for tech in project.technologies.all %}
+
+            <div class="tech-badge">
+
+                {% if tech.icon %}
+                <i class="{{ tech.icon }}"> </i>
+                {% else %}
+                <i class="fas fa-code"></i>
+                {% endif %}
+
+                <span>
+                    {{ tech.name }}
+                </span>
+
+            </div>
+
+            {% empty %}
+
+            <div class="gallery-empty">
+
+                <i class="fas fa-laptop-code"></i>
+
+                <p>
+
+                    No technologies have been added yet.
+
+                </p>
+
+            </div>
+
+            {% endfor %}
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ===========================
+        PROJECT PHOTOS
+============================ -->
+
+<section class="gallery-section">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <h2>
+
+                Project Photos
+
+            </h2>
+
+            <p>
+
+                Click on any screenshot to view it in fullscreen.
+
+            </p>
+
+        </div>
+
+        <div class="gallery-grid"
+             id="project-gallery">
+
+            {% for screenshot in project.screenshots.all %}
+
+            <a href="{{ screenshot.image.url }}"
+               class="gallery-item"
+
+               data-pswp-width="1600"
+               data-pswp-height="900"
+
+               {% if screenshot.caption %}
+               data-pswp-caption="{{ screenshot.caption }}"
+               {% endif %}>
+
+                <img src="{{ screenshot.image.url }}"
+                     alt="{{ screenshot.caption|default:project.title }}"
+                     loading="lazy">
+
+                {% if screenshot.caption %}
+
+                <div class="gallery-caption">
+
+                    {{ screenshot.caption }}
+
+                </div>
+
+                {% endif %}
+
+            </a>
+
+            {% empty %}
+
+            <div class="gallery-empty">
+
+                <i class="fas fa-images"></i>
+
+                <h3>
+
+                    No Screenshots Available
+
+                </h3>
+
+                <p>
+
+                    Upload screenshots from the Django Admin panel.
+
+                </p>
+
+            </div>
+
+            {% endfor %}
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ===========================
+        GITHUB SECTION
+============================ -->
+
+<section class="github-section">
+
+    <div class="container">
+
+        {% if project.github_link %}
+
+        <a href="{{ project.github_link }}"
+           target="_blank"
+           class="btn btn-primary github-large">
+
+            <i class="fab fa-github"></i>
+
+            View Source Code
+
+        </a>
+
+        {% endif %}
+
+    </div>
+
+</section>
+
+
+
+<!-- ===========================
+            FOOTER
+============================ -->
+
+<footer class="project-footer">
+
+    <div class="container">
+
+        <a href="{% url 'home' %}#projects"
+           class="btn btn-outline">
+
+            <i class="fas fa-arrow-left"></i>
+
+            Back to Projects
+
+        </a>
+
+    </div>
+
+</footer>
+
+
+
+<!-- =====================================
+        PHOTOSWIPE JAVASCRIPT
+====================================== -->
+
+<script type="module">
+
+import PhotoSwipeLightbox from
+"https://cdn.jsdelivr.net/npm/photoswipe@5/dist/photoswipe-lightbox.esm.min.js";
+
+const lightbox = new PhotoSwipeLightbox({
+
+    gallery: "#project-gallery",
+
+    children: "a",
+
+    pswpModule: () =>
+        import("https://cdn.jsdelivr.net/npm/photoswipe@5/dist/photoswipe.esm.min.js")
+
+});
+
+lightbox.init();
+
+</script>
+
+</body>
+
+</html>

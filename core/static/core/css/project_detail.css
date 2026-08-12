@@ -1,0 +1,834 @@
+/*==================================================
+            PROJECT DETAIL PAGE
+            Part 1 - Layout & Hero
+==================================================*/
+
+/* ---------- RESET ---------- */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#0f172a;
+    color:#ffffff;
+    font-family:"Inter",sans-serif;
+    line-height:1.7;
+}
+
+/* ---------- CONTAINER ---------- */
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+/* ---------- LINKS ---------- */
+
+a{
+    text-decoration:none;
+}
+
+/* ---------- SECTION ---------- */
+
+section{
+    padding:80px 0;
+}
+
+/*==================================================
+                    NAVBAR
+==================================================*/
+
+.detail-navbar{
+
+    padding:35px 0;
+
+    border-bottom:1px solid rgba(255,255,255,.08);
+
+    background:#0f172a;
+
+    position:sticky;
+
+    top:0;
+
+    z-index:100;
+
+}
+
+.back-link{
+
+    color:#38bdf8;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.back-link i{
+
+    margin-right:10px;
+
+}
+
+.back-link:hover{
+
+    color:#ffffff;
+
+}
+
+/*==================================================
+                  HERO SECTION
+==================================================*/
+
+.project-hero{
+
+    padding-top:70px;
+
+    padding-bottom:70px;
+
+}
+
+.project-heading{
+
+    text-align:center;
+
+    margin-bottom:60px;
+
+}
+
+.project-label{
+
+    display:inline-block;
+
+    padding:8px 20px;
+
+    background:rgba(56,189,248,.12);
+
+    color:#38bdf8;
+
+    border:1px solid rgba(56,189,248,.35);
+
+    border-radius:30px;
+
+    font-size:.9rem;
+
+    margin-bottom:25px;
+
+}
+
+.project-heading h1{
+
+    font-size:3.8rem;
+
+    font-weight:800;
+
+    line-height:1.15;
+
+    margin-bottom:20px;
+
+}
+
+.hero-description{
+
+    max-width:760px;
+
+    margin:auto;
+
+    color:#94a3b8;
+
+    font-size:1.15rem;
+
+}
+
+.github-btn{
+
+    margin-top:35px;
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:10px;
+
+}
+
+/*==================================================
+                 HERO IMAGE
+==================================================*/
+
+.hero-image{
+
+    margin-top:60px;
+
+}
+
+.hero-image img{
+
+    width:100%;
+
+    display:block;
+
+    border-radius:22px;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    box-shadow:
+
+        0 25px 60px rgba(0,0,0,.45);
+
+    transition:.35s;
+
+}
+
+.hero-image img:hover{
+
+    transform:translateY(-6px);
+
+}
+
+/*==================================================
+             PROJECT INFORMATION
+==================================================*/
+
+.project-info{
+
+    padding-top:20px;
+
+}
+
+.info-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:25px;
+
+}
+
+.info-card{
+
+    background:#111827;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:18px;
+
+    padding:35px;
+
+    text-align:center;
+
+    transition:.3s;
+
+}
+
+.info-card:hover{
+
+    transform:translateY(-8px);
+
+    border-color:#38bdf8;
+
+}
+
+.info-card i{
+
+    font-size:2rem;
+
+    color:#38bdf8;
+
+    margin-bottom:20px;
+
+}
+
+.info-card h4{
+
+    margin-bottom:12px;
+
+    font-size:1.1rem;
+
+}
+
+.info-card p{
+
+    color:#94a3b8;
+
+}
+
+/*==================================================
+                  BUTTONS
+==================================================*/
+
+.github-btn{
+
+    padding:14px 28px;
+
+    border-radius:10px;
+
+    font-weight:600;
+
+}
+
+/*==================================================
+                RESPONSIVE
+==================================================*/
+
+@media(max-width:992px){
+
+    .project-heading h1{
+
+        font-size:3rem;
+
+    }
+
+    .info-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    section{
+
+        padding:60px 0;
+
+    }
+
+    .project-heading h1{
+
+        font-size:2.3rem;
+
+    }
+
+    .hero-description{
+
+        font-size:1rem;
+
+    }
+
+    .hero-image{
+
+        margin-top:40px;
+
+    }
+
+}
+
+
+/*==================================================
+            PART 2
+      Overview • Features • Technologies
+==================================================*/
+
+/*=============================
+      COMMON SECTION TITLE
+=============================*/
+
+.overview-section h2,
+.features-section h2,
+.technology-section h2,
+.gallery-section h2{
+
+    font-size:2.2rem;
+
+    font-weight:700;
+
+    margin-bottom:40px;
+
+    position:relative;
+
+    display:inline-block;
+
+}
+
+.overview-section h2::after,
+.features-section h2::after,
+.technology-section h2::after,
+.gallery-section h2::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:-12px;
+
+    width:70px;
+
+    height:4px;
+
+    border-radius:20px;
+
+    background:#38bdf8;
+
+}
+
+
+/*=============================
+      PROJECT OVERVIEW
+=============================*/
+
+.overview-section{
+
+    padding-top:80px;
+
+}
+
+.overview-section p{
+
+    margin-top:15px;
+
+    color:#cbd5e1;
+
+    font-size:1.08rem;
+
+    line-height:2;
+
+    max-width:950px;
+
+}
+
+
+/*=============================
+      FEATURES
+=============================*/
+
+.features-section{
+
+    padding-top:40px;
+
+}
+
+.feature-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:25px;
+
+    margin-top:40px;
+
+}
+
+.feature-card{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+
+    background:#111827;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    padding:22px 24px;
+
+    border-radius:16px;
+
+    transition:.3s ease;
+
+}
+
+.feature-card:hover{
+
+    transform:translateY(-6px);
+
+    border-color:#38bdf8;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.35);
+
+}
+
+.feature-card i{
+
+    color:#22c55e;
+
+    font-size:1.3rem;
+
+}
+
+.feature-card span{
+
+    font-size:1rem;
+
+    color:#f1f5f9;
+
+    font-weight:500;
+
+}
+
+
+/*=============================
+      TECHNOLOGY STACK
+=============================*/
+
+.technology-section{
+
+    padding-top:70px;
+
+}
+
+.technology-grid{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:16px;
+
+    margin-top:40px;
+
+}
+
+.tech-badge{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:12px 22px;
+
+    background:#1e293b;
+
+    border:1px solid rgba(56,189,248,.25);
+
+    color:#38bdf8;
+
+    border-radius:50px;
+
+    font-size:.95rem;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.tech-badge:hover{
+
+    background:#38bdf8;
+
+    color:#0f172a;
+
+    transform:translateY(-4px);
+
+}
+
+
+/*=============================
+      DIVIDER SPACING
+=============================*/
+
+.project-info,
+.overview-section,
+.features-section,
+.technology-section,
+.gallery-section{
+
+    margin-bottom:20px;
+
+}
+
+
+/*=============================
+      SMALL ANIMATION
+=============================*/
+
+.info-card,
+.feature-card,
+.tech-badge{
+
+    transition:all .3s ease;
+
+}
+
+
+/*=============================
+      RESPONSIVE
+=============================*/
+
+@media(max-width:992px){
+
+    .feature-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .overview-section h2,
+    .features-section h2,
+    .technology-section h2,
+    .gallery-section h2{
+
+        font-size:1.8rem;
+
+    }
+
+    .overview-section p{
+
+        font-size:1rem;
+
+        line-height:1.9;
+
+    }
+
+    .technology-grid{
+
+        gap:12px;
+
+    }
+
+    .tech-badge{
+
+        padding:10px 18px;
+
+        font-size:.9rem;
+
+    }
+
+    .tech-badge i{
+
+    margin-right:10px;
+
+    color:#38bdf8;
+
+    font-size:18px;
+
+}
+
+}
+
+/*==================================================
+            PART 3
+     Gallery • GitHub • Footer • Final Polish
+==================================================*/
+
+/*==============================
+        PROJECT GALLERY
+===============================*/
+
+.gallery-section{
+    padding-top:70px;
+    padding-bottom:90px;
+}
+
+.gallery-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:28px;
+    margin-top:45px;
+}
+
+.gallery-item{
+    background:#111827;
+    border-radius:18px;
+    overflow:hidden;
+    border:1px solid rgba(255,255,255,.08);
+    transition:all .35s ease;
+    cursor:pointer;
+}
+
+.gallery-item:hover{
+    transform:translateY(-8px);
+    border-color:#38bdf8;
+    box-shadow:0 20px 45px rgba(0,0,0,.45);
+}
+
+.gallery-item img{
+    width:100%;
+    height:260px;
+    object-fit:cover;
+    display:block;
+    transition:transform .4s ease;
+}
+
+.gallery-item:hover img{
+    transform:scale(1.05);
+}
+.gallery-item:hover img{
+    transform:scale(1.08);
+}
+
+.gallery-empty{
+    padding:60px;
+    text-align:center;
+    background:#111827;
+    border-radius:18px;
+    color:#94a3b8;
+}
+
+/*==============================
+       GITHUB SECTION
+===============================*/
+
+.github-section{
+    padding:40px 0 70px;
+    text-align:center;
+}
+
+.github-large{
+    padding:16px 34px;
+    border-radius:12px;
+    font-size:1rem;
+    font-weight:600;
+    display:inline-flex;
+    align-items:center;
+    gap:12px;
+    transition:.3s;
+}
+
+.github-large:hover{
+    transform:translateY(-5px);
+}
+
+/*==============================
+          FOOTER
+===============================*/
+
+.project-footer{
+    padding:40px 0 80px;
+    text-align:center;
+    border-top:1px solid rgba(255,255,255,.08);
+}
+
+.project-footer .btn{
+    padding:14px 28px;
+    border-radius:10px;
+}
+
+/*==============================
+      IMAGE SHADOW
+===============================*/
+
+.hero-image img,
+.gallery-item img{
+    user-select:none;
+}
+
+/*==============================
+        SCROLLBAR
+===============================*/
+
+::-webkit-scrollbar{
+    width:10px;
+}
+
+::-webkit-scrollbar-track{
+    background:#0f172a;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#334155;
+    border-radius:20px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background:#38bdf8;
+}
+
+/*==============================
+      SMOOTH ANIMATIONS
+===============================*/
+
+.project-heading,
+.info-card,
+.feature-card,
+.tech-badge,
+.gallery-item{
+    animation:fadeUp .7s ease both;
+}
+
+@keyframes fadeUp{
+
+    from{
+        opacity:0;
+        transform:translateY(25px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+/*==============================
+      MOBILE
+===============================*/
+
+@media(max-width:768px){
+
+    .gallery-grid{
+        grid-template-columns:1fr;
+    }
+
+    .gallery-item img{
+        height:220px;
+    }
+
+    .github-large{
+        width:100%;
+        justify-content:center;
+    }
+
+}
+
+@media(max-width:480px){
+
+    .project-heading h1{
+        font-size:2rem;
+    }
+
+    .gallery-item img{
+        height:190px;
+    }
+
+    .feature-card{
+        padding:18px;
+    }
+
+}
+
+/*=========================================
+        PHOTOSWIPE CUSTOMIZATION
+=========================================*/
+
+.pswp__bg{
+    background:rgba(15,23,42,.95) !important;
+}
+
+.pswp__img{
+    border-radius:16px;
+}
+
+.pswp__button{
+    opacity:.9;
+}
+
+.pswp__button:hover{
+    opacity:1;
+}
+
+.pswp__counter{
+    font-size:15px;
+    font-weight:600;
+}
