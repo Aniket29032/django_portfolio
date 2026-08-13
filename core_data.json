@@ -1,0 +1,102 @@
+[
+{
+  "model": "core.project",
+  "pk": 2,
+  "fields": {
+    "title": "Delivery Rider Portal Module",
+    "slug": "delivery-rider-portal-module",
+    "short_description": "Delivery rider portal module for odoo 19 enterprise version.",
+    "full_description": "The Delivery Rider Portal is a custom module developed in Odoo 19 to streamline the complete last-mile delivery process through a dedicated portal for delivery riders. The module enables riders to manage assigned deliveries efficiently while allowing customers and delivery managers to stay informed throughout the delivery lifecycle.\r\n\r\nThe system provides a secure, structured, and user-friendly workflow from delivery assignment to successful order completion. It integrates portal functionality, OTP verification, automated email notifications, status management, and role-based access control into a single solution.\r\n\r\nThe module was designed to improve delivery efficiency, reduce manual communication, and provide better visibility into delivery operations for customers, riders, and management.",
+    "github_link": "https://github.com/Aniket29032/delivery-rider-portal-odoo19",
+    "image": "projects/ChatGPT_Image_Jul_28_2026_10_13_36_AM.png",
+    "icon": "fa-motorcycle",
+    "created_at": "2026-07-27T12:35:19.787Z",
+    "technologies": [
+      2,
+      6,
+      1,
+      3
+    ]
+  }
+},
+{
+  "model": "core.project",
+  "pk": 3,
+  "fields": {
+    "title": "Employee Training Management",
+    "slug": "employee-training-management",
+    "short_description": "Employee Training Management (ETM) is a comprehensive Odoo 19 module designed to streamline employee training processes. It enables organizations to manage training courses, sessions, trainers, trainees, attendance, project-based assignments, certificates, and training activities within a single workflow.",
+    "full_description": "Employee Training Management (ETM) is a comprehensive Odoo 19 module developed to simplify and automate the complete employee training lifecycle within an organization. The module provides a centralized platform to manage training courses, training sessions, trainers, trainees, attendance, project-based assignments, certificates, reports, and training activities while maintaining a secure role-based workflow.\r\n\r\nThe system enables HR departments and trainers to efficiently organize training programs, monitor employee participation, evaluate progress, assign practical tasks, and issue certificates upon successful completion. By integrating with Odoo's Project application, trainees can receive real-world assignments that trainers can review, approve, or reject with comments, ensuring practical learning alongside theoretical training.\r\n\r\nThe module also includes attendance management through an interactive wizard, certificate generation with printable reports, smart dashboards for quick insights, automated email notifications, chatter integration, activity scheduling, and comprehensive security groups with record rules to control user access.",
+    "github_link": "https://github.com/Aniket29032/employee-training-management-odoo19?tab=MIT-1-ov-file",
+    "image": "projects/ChatGPT_Image_Jul_29_2026_08_19_53_PM.png",
+    "icon": "fa-users",
+    "created_at": "2026-07-29T14:50:33.917Z",
+    "technologies": [
+      7,
+      2,
+      1,
+      3
+    ]
+  }
+},
+{
+  "model": "core.project",
+  "pk": 4,
+  "fields": {
+    "title": "Sales Customer Credit Control",
+    "slug": "sales-customer-credit-control",
+    "short_description": "Customer Credit Control is an Odoo 19 Community module that helps businesses manage customer credit limits before confirming sales orders. It provides configurable default and customer-specific credit limits, real-time credit exposure analysis, risk assessment, and warning/blocking of sales confirmations when the credit limit is exceeded.",
+    "full_description": "Customer Credit Control for Odoo 19 Community\r\n\r\nCustomer Credit Control is a powerful credit management module designed for Odoo 19 Community Edition. It helps organizations reduce financial risk by preventing sales to customers who have exceeded their allowed credit limits.\r\n\r\nThe module automatically evaluates a customer's outstanding invoices, calculates total credit exposure by including the current quotation, and compares it with the configured credit limit before allowing sales order confirmation.\r\n\r\nAdministrators can define a global default credit limit that applies to all customers, while still allowing individual customer-specific credit limits whenever required. This eliminates the need to configure credit values for every customer individually.\r\n\r\nThe module also provides real-time credit insights directly inside the customer form and sales order, including outstanding amount, available credit, credit utilization percentage, and risk level.\r\n\r\nWhen a quotation exceeds the customer's credit limit, the system can either display a warning allowing confirmation or completely block confirmation based on company settings.\r\n\r\nDesigned with a clean interface and seamless Odoo integration, the module helps businesses enforce credit policies without disrupting the normal sales workflow.",
+    "github_link": "https://github.com/Aniket29032/sale_customer_credit_control",
+    "image": "projects/ChatGPT_Image_Aug_4_2026_03_40_38_PM.png",
+    "icon": "fa-code",
+    "created_at": "2026-08-04T10:21:49.476Z",
+    "technologies": [
+      7,
+      8,
+      1,
+      3
+    ]
+  }
+},
+{
+  "model": "core.project",
+  "pk": 5,
+  "fields": {
+    "title": "Sales Approval Management",
+    "slug": "sales-approval-management",
+    "short_description": "A custom Odoo 19 module that manages quotation approval workflows based on configurable sales amount and discount thresholds. It provides manager approval/rejection, reset-to-draft functionality, email notifications, approval activities, chatter tracking, validations, and a complete approval history/audit trail for each quotation.",
+    "full_description": "Sales Approval Management is a custom Odoo 19 module developed to manage and control the quotation approval process. It allows organizations to define approval rules based on quotation amount and discount thresholds.\r\n\r\nWhen a quotation meets the configured approval criteria, it is automatically moved to Waiting Approval and assigned to an authorized Approval Manager. The manager can review and approve or reject the quotation. Rejected quotations can be reset to draft, modified, and resubmitted for approval.\r\n\r\nThe module integrates with Odoo's Sales, Email, Chatter, Activities, Security, and Configuration systems to provide notifications, approval activities, access control, and a complete approval history.\r\n\r\nIt ensures that quotations requiring managerial authorization cannot be confirmed or modified without proper approval, providing a structured and traceable approval workflow for the sales process.",
+    "github_link": "https://github.com/Aniket29032/sales-approval-management",
+    "image": "projects/ChatGPT_Image_Aug_10_2026_07_17_41_PM.png",
+    "icon": "fa-code",
+    "created_at": "2026-08-10T13:55:11.396Z",
+    "technologies": [
+      7,
+      2,
+      1,
+      3
+    ]
+  }
+},
+{
+  "model": "core.project",
+  "pk": 6,
+  "fields": {
+    "title": "CRM n8n Notification",
+    "slug": "crm-n8n-notification",
+    "short_description": "Automatically sends CRM lead details from Odoo 19 to n8n via webhook and delivers email notifications through Gmail/SMTP. Administrators can configure the webhook URL, recipient email, subject, and email template directly from Odoo settings.",
+    "full_description": "CRM n8n Notification is an Odoo 19 integration module that connects Odoo CRM with n8n through a webhook. It automatically sends newly created CRM lead information from Odoo to an n8n workflow, where the data can be processed and used to send email notifications through Gmail or another configured email service.\r\n\r\nThe module provides a simple configuration interface inside Odoo Settings, allowing administrators to enable or disable CRM notifications, configure the n8n webhook URL, specify the recipient email address, and define the email subject and body using dynamic lead placeholders.\r\n\r\nWhen a new CRM lead is created, the module collects relevant lead information such as lead name, customer, email, phone, salesperson, and expected revenue and sends the information to the configured n8n webhook. n8n receives the data, processes the configured email template, replaces the placeholders with the actual lead values, and sends the final notification email.\r\n\r\nThe integration helps automate CRM lead notifications without requiring users to manually send emails whenever a new lead is created. It also keeps the Odoo side simple while allowing n8n to handle the notification workflow and email delivery.\r\n\r\nThe module is designed for Odoo 19 and provides a flexible foundation that can later be extended with additional n8n-based CRM automation workflows.",
+    "github_link": "https://github.com/Aniket29032/crm_n8n_notification.git",
+    "image": "projects/ChatGPT_Image_Aug_10_2026_07_33_45_PM.png",
+    "icon": "fa-code",
+    "created_at": "2026-08-10T14:04:52.460Z",
+    "technologies": [
+      7,
+      2,
+      1,
+      3
+    ]
+  }
+}
+]
