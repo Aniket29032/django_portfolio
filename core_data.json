@@ -1,5 +1,77 @@
 [
 {
+  "model": "core.technology",
+  "pk": 1,
+  "fields": {
+    "name": "Python",
+    "icon": "fa-brands fa-python",
+    "image": ""
+  }
+},
+{
+  "model": "core.technology",
+  "pk": 2,
+  "fields": {
+    "name": "Odoo V19 (Enterprise)",
+    "icon": "fa-solid fa-cubes",
+    "image": "technology_icons/odoo-icon-filled-256_YwYBBVb.png"
+  }
+},
+{
+  "model": "core.technology",
+  "pk": 3,
+  "fields": {
+    "name": "XML",
+    "icon": "fa-solid fa-code",
+    "image": ""
+  }
+},
+{
+  "model": "core.technology",
+  "pk": 4,
+  "fields": {
+    "name": "JS",
+    "icon": "",
+    "image": ""
+  }
+},
+{
+  "model": "core.technology",
+  "pk": 5,
+  "fields": {
+    "name": "CSS",
+    "icon": "",
+    "image": ""
+  }
+},
+{
+  "model": "core.technology",
+  "pk": 6,
+  "fields": {
+    "name": "PSQL",
+    "icon": "",
+    "image": "technology_icons/icons8-postgresql-24.png"
+  }
+},
+{
+  "model": "core.technology",
+  "pk": 7,
+  "fields": {
+    "name": "ORM",
+    "icon": "fa-solid fa-diagram-project",
+    "image": ""
+  }
+},
+{
+  "model": "core.technology",
+  "pk": 8,
+  "fields": {
+    "name": "Odoo V19 Community",
+    "icon": "",
+    "image": "technology_icons/odoo-icon-filled-256_C8QuxGX.png"
+  }
+},
+{
   "model": "core.project",
   "pk": 2,
   "fields": {
@@ -97,6 +169,1165 @@
       1,
       3
     ]
+  }
+},
+{
+  "model": "core.projectfeature",
+  "pk": 1,
+  "fields": {
+    "project": 2,
+    "title": "Dedicated Rider Portal"
+  }
+},
+{
+  "model": "core.projectfeature",
+  "pk": 2,
+  "fields": {
+    "project": 2,
+    "title": "Delivery Dashboard with real-time delivery statistics"
+  }
+},
+{
+  "model": "core.projectfeature",
+  "pk": 3,
+  "fields": {
+    "project": 2,
+    "title": "Rider-specific assigned deliveries"
+  }
+},
+{
+  "model": "core.projectfeature",
+  "pk": 4,
+  "fields": {
+    "project": 2,
+    "title": "Delivery Acceptance Workflow"
+  }
+},
+{
+  "model": "core.projectfeature",
+  "pk": 5,
+  "fields": {
+    "project": 2,
+    "title": "Rider Arrival Confirmation"
+  }
+},
+{
+  "model": "core.projectfeature",
+  "pk": 6,
+  "fields": {
+    "project": 2,
+    "title": "OTP-Based Delivery Verification"
+  }
+},
+{
+  "model": "core.projectfeature",
+  "pk": 7,
+  "fields": {
+    "project": 2,
+    "title": "Customer Email Notifications"
+  }
+},
+{
+  "model": "core.projectfeature",
+  "pk": 8,
+  "fields": {
+    "project": 2,
+    "title": "Delivery Manager Email Notifications"
+  }
+},
+{
+  "model": "core.projectfeature",
+  "pk": 9,
+  "fields": {
+    "project": 2,
+    "title": "Delivery Status Tracking"
+  }
+},
+{
+  "model": "core.projectfeature",
+  "pk": 10,
+  "fields": {
+    "project": 2,
+    "title": "Role-based Security"
+  }
+},
+{
+  "model": "core.projectfeature",
+  "pk": 11,
+  "fields": {
+    "project": 4,
+    "title": "Automatic credit check during Sales Order confirmation."
+  }
+},
+{
+  "model": "core.projectfeature",
+  "pk": 12,
+  "fields": {
+    "project": 4,
+    "title": "Configure a global default credit limit from Settings."
+  }
+},
+{
+  "model": "core.projectfeature",
+  "pk": 13,
+  "fields": {
+    "project": 4,
+    "title": "Supports Warn Only mode."
+  }
+},
+{
+  "model": "core.projectfeature",
+  "pk": 14,
+  "fields": {
+    "project": 4,
+    "title": "Supports Block Confirmation mode."
+  }
+},
+{
+  "model": "core.projectfeature",
+  "pk": 15,
+  "fields": {
+    "project": 4,
+    "title": "Enable/Disable Customer Credit Control."
+  }
+},
+{
+  "model": "core.projectfeature",
+  "pk": 16,
+  "fields": {
+    "project": 4,
+    "title": "Dedicated Credit Control tab."
+  }
+},
+{
+  "model": "core.projectfeature",
+  "pk": 17,
+  "fields": {
+    "project": 4,
+    "title": "Live credit calculation."
+  }
+},
+{
+  "model": "core.projectfeature",
+  "pk": 18,
+  "fields": {
+    "project": 4,
+    "title": "Fully integrated with Odoo Sales."
+  }
+},
+{
+  "model": "core.projectfeature",
+  "pk": 19,
+  "fields": {
+    "project": 5,
+    "title": "Amount-Based Approval"
+  }
+},
+{
+  "model": "core.projectfeature",
+  "pk": 20,
+  "fields": {
+    "project": 5,
+    "title": "Discount-Based Approval"
+  }
+},
+{
+  "model": "core.projectfeature",
+  "pk": 21,
+  "fields": {
+    "project": 5,
+    "title": "Manager Approval Workflow"
+  }
+},
+{
+  "model": "core.projectfeature",
+  "pk": 22,
+  "fields": {
+    "project": 5,
+    "title": "Approval & Rejection"
+  }
+},
+{
+  "model": "core.projectfeature",
+  "pk": 23,
+  "fields": {
+    "project": 5,
+    "title": "Approval Activities"
+  }
+},
+{
+  "model": "core.projectfeature",
+  "pk": 24,
+  "fields": {
+    "project": 5,
+    "title": "Email Notifications"
+  }
+},
+{
+  "model": "core.projectfeature",
+  "pk": 25,
+  "fields": {
+    "project": 5,
+    "title": "Approval History"
+  }
+},
+{
+  "model": "core.projectfeature",
+  "pk": 26,
+  "fields": {
+    "project": 5,
+    "title": "Configurable Approval Rules"
+  }
+},
+{
+  "model": "core.projectfeature",
+  "pk": 27,
+  "fields": {
+    "project": 5,
+    "title": "Role-Based Access Control"
+  }
+},
+{
+  "model": "core.projectfeature",
+  "pk": 28,
+  "fields": {
+    "project": 5,
+    "title": "Chatter Tracking"
+  }
+},
+{
+  "model": "core.projectfeature",
+  "pk": 29,
+  "fields": {
+    "project": 3,
+    "title": "📚 Course Management"
+  }
+},
+{
+  "model": "core.projectfeature",
+  "pk": 30,
+  "fields": {
+    "project": 3,
+    "title": "👨‍🏫 Trainer Management"
+  }
+},
+{
+  "model": "core.projectfeature",
+  "pk": 31,
+  "fields": {
+    "project": 3,
+    "title": "👨‍💼 Employee Enrollment"
+  }
+},
+{
+  "model": "core.projectfeature",
+  "pk": 32,
+  "fields": {
+    "project": 3,
+    "title": "📅 Training Session Scheduling"
+  }
+},
+{
+  "model": "core.projectfeature",
+  "pk": 33,
+  "fields": {
+    "project": 3,
+    "title": "🕒 Session & Attendance Tracking"
+  }
+},
+{
+  "model": "core.projectfeature",
+  "pk": 34,
+  "fields": {
+    "project": 3,
+    "title": "📝 Training Task Assignment"
+  }
+},
+{
+  "model": "core.projectfeature",
+  "pk": 35,
+  "fields": {
+    "project": 3,
+    "title": "🔄 Task Submission & Review Workflow"
+  }
+},
+{
+  "model": "core.projectfeature",
+  "pk": 36,
+  "fields": {
+    "project": 3,
+    "title": "✅ Task Approval & Rejection"
+  }
+},
+{
+  "model": "core.projectfeature",
+  "pk": 37,
+  "fields": {
+    "project": 3,
+    "title": "💬 Trainer Review & Comments"
+  }
+},
+{
+  "model": "core.projectfeature",
+  "pk": 38,
+  "fields": {
+    "project": 3,
+    "title": "🏆 Automatic Certificate Generation"
+  }
+},
+{
+  "model": "core.projectfeature",
+  "pk": 39,
+  "fields": {
+    "project": 3,
+    "title": "📧 Automated Email Notifications"
+  }
+},
+{
+  "model": "core.projectfeature",
+  "pk": 40,
+  "fields": {
+    "project": 3,
+    "title": "📎 Certificate PDF Email Attachments"
+  }
+},
+{
+  "model": "core.projectfeature",
+  "pk": 41,
+  "fields": {
+    "project": 3,
+    "title": "🔐 Role-Based Access Control"
+  }
+},
+{
+  "model": "core.projectfeature",
+  "pk": 42,
+  "fields": {
+    "project": 6,
+    "title": "Automatic Lead Notifications"
+  }
+},
+{
+  "model": "core.projectfeature",
+  "pk": 43,
+  "fields": {
+    "project": 6,
+    "title": "Configurable Notifications"
+  }
+},
+{
+  "model": "core.projectfeature",
+  "pk": 44,
+  "fields": {
+    "project": 6,
+    "title": "Dynamic Email Templates"
+  }
+},
+{
+  "model": "core.projectfeature",
+  "pk": 45,
+  "fields": {
+    "project": 6,
+    "title": "Recipient Configuration"
+  }
+},
+{
+  "model": "core.projectfeature",
+  "pk": 46,
+  "fields": {
+    "project": 6,
+    "title": "Automated Email Delivery"
+  }
+},
+{
+  "model": "core.projectfeature",
+  "pk": 47,
+  "fields": {
+    "project": 6,
+    "title": "Real-Time Workflow Automation"
+  }
+},
+{
+  "model": "core.projectimage",
+  "pk": 5,
+  "fields": {
+    "project": 4,
+    "image": "projects/screenshots/Screenshot_from_2026-08-06_12-07-06.png",
+    "caption": ""
+  }
+},
+{
+  "model": "core.projectimage",
+  "pk": 6,
+  "fields": {
+    "project": 4,
+    "image": "projects/screenshots/Screenshot_from_2026-08-06_12-08-13.png",
+    "caption": ""
+  }
+},
+{
+  "model": "core.projectimage",
+  "pk": 7,
+  "fields": {
+    "project": 4,
+    "image": "projects/screenshots/Screenshot_from_2026-08-06_12-08-34.png",
+    "caption": ""
+  }
+},
+{
+  "model": "core.projectimage",
+  "pk": 8,
+  "fields": {
+    "project": 4,
+    "image": "projects/screenshots/Screenshot_from_2026-08-06_12-08-50.png",
+    "caption": ""
+  }
+},
+{
+  "model": "core.projectimage",
+  "pk": 9,
+  "fields": {
+    "project": 4,
+    "image": "projects/screenshots/Screenshot_from_2026-08-06_12-09-01.png",
+    "caption": ""
+  }
+},
+{
+  "model": "core.projectimage",
+  "pk": 10,
+  "fields": {
+    "project": 4,
+    "image": "projects/screenshots/Screenshot_from_2026-08-06_12-09-14.png",
+    "caption": ""
+  }
+},
+{
+  "model": "core.projectimage",
+  "pk": 11,
+  "fields": {
+    "project": 4,
+    "image": "projects/screenshots/Screenshot_from_2026-08-06_12-09-20.png",
+    "caption": ""
+  }
+},
+{
+  "model": "core.projectimage",
+  "pk": 12,
+  "fields": {
+    "project": 4,
+    "image": "projects/screenshots/Screenshot_from_2026-08-06_12-10-30.png",
+    "caption": ""
+  }
+},
+{
+  "model": "core.projectimage",
+  "pk": 13,
+  "fields": {
+    "project": 4,
+    "image": "projects/screenshots/Screenshot_from_2026-08-06_12-10-48.png",
+    "caption": ""
+  }
+},
+{
+  "model": "core.projectimage",
+  "pk": 14,
+  "fields": {
+    "project": 4,
+    "image": "projects/screenshots/Screenshot_from_2026-08-06_12-11-05.png",
+    "caption": ""
+  }
+},
+{
+  "model": "core.projectimage",
+  "pk": 15,
+  "fields": {
+    "project": 3,
+    "image": "projects/screenshots/Screenshot_from_2026-08-07_15-05-22.png",
+    "caption": ""
+  }
+},
+{
+  "model": "core.projectimage",
+  "pk": 16,
+  "fields": {
+    "project": 3,
+    "image": "projects/screenshots/Screenshot_from_2026-08-07_15-07-04.png",
+    "caption": ""
+  }
+},
+{
+  "model": "core.projectimage",
+  "pk": 17,
+  "fields": {
+    "project": 3,
+    "image": "projects/screenshots/Screenshot_from_2026-08-07_15-07-15.png",
+    "caption": ""
+  }
+},
+{
+  "model": "core.projectimage",
+  "pk": 18,
+  "fields": {
+    "project": 3,
+    "image": "projects/screenshots/Screenshot_from_2026-08-07_15-07-25.png",
+    "caption": ""
+  }
+},
+{
+  "model": "core.projectimage",
+  "pk": 19,
+  "fields": {
+    "project": 3,
+    "image": "projects/screenshots/Screenshot_from_2026-08-07_15-08-01.png",
+    "caption": ""
+  }
+},
+{
+  "model": "core.projectimage",
+  "pk": 21,
+  "fields": {
+    "project": 3,
+    "image": "projects/screenshots/Screenshot_from_2026-08-07_15-46-26.png",
+    "caption": ""
+  }
+},
+{
+  "model": "core.projectimage",
+  "pk": 22,
+  "fields": {
+    "project": 3,
+    "image": "projects/screenshots/Screenshot_from_2026-08-07_15-51-37.png",
+    "caption": ""
+  }
+},
+{
+  "model": "core.projectimage",
+  "pk": 23,
+  "fields": {
+    "project": 3,
+    "image": "projects/screenshots/Screenshot_from_2026-08-07_15-49-49.png",
+    "caption": ""
+  }
+},
+{
+  "model": "core.projectimage",
+  "pk": 24,
+  "fields": {
+    "project": 3,
+    "image": "projects/screenshots/Screenshot_from_2026-08-07_15-49-58.png",
+    "caption": ""
+  }
+},
+{
+  "model": "core.projectimage",
+  "pk": 25,
+  "fields": {
+    "project": 3,
+    "image": "projects/screenshots/Screenshot_from_2026-08-07_15-50-31.png",
+    "caption": ""
+  }
+},
+{
+  "model": "core.projectimage",
+  "pk": 26,
+  "fields": {
+    "project": 3,
+    "image": "projects/screenshots/Screenshot_from_2026-08-07_15-50-51.png",
+    "caption": ""
+  }
+},
+{
+  "model": "core.projectimage",
+  "pk": 27,
+  "fields": {
+    "project": 3,
+    "image": "projects/screenshots/Screenshot_from_2026-08-07_15-51-37_qa1dqKu.png",
+    "caption": ""
+  }
+},
+{
+  "model": "core.projectimage",
+  "pk": 28,
+  "fields": {
+    "project": 3,
+    "image": "projects/screenshots/Screenshot_from_2026-08-07_15-52-23.png",
+    "caption": ""
+  }
+},
+{
+  "model": "core.projectimage",
+  "pk": 29,
+  "fields": {
+    "project": 3,
+    "image": "projects/screenshots/Screenshot_from_2026-08-07_15-55-21.png",
+    "caption": ""
+  }
+},
+{
+  "model": "core.projectimage",
+  "pk": 30,
+  "fields": {
+    "project": 3,
+    "image": "projects/screenshots/Screenshot_from_2026-08-07_17-08-24.png",
+    "caption": ""
+  }
+},
+{
+  "model": "core.projectimage",
+  "pk": 31,
+  "fields": {
+    "project": 3,
+    "image": "projects/screenshots/Screenshot_from_2026-08-07_17-08-41.png",
+    "caption": ""
+  }
+},
+{
+  "model": "core.projectimage",
+  "pk": 32,
+  "fields": {
+    "project": 3,
+    "image": "projects/screenshots/Screenshot_from_2026-08-07_17-08-45.png",
+    "caption": ""
+  }
+},
+{
+  "model": "core.projectimage",
+  "pk": 33,
+  "fields": {
+    "project": 3,
+    "image": "projects/screenshots/Screenshot_from_2026-08-07_17-08-53.png",
+    "caption": ""
+  }
+},
+{
+  "model": "core.projectimage",
+  "pk": 34,
+  "fields": {
+    "project": 3,
+    "image": "projects/screenshots/Screenshot_from_2026-08-07_17-09-00.png",
+    "caption": ""
+  }
+},
+{
+  "model": "core.projectimage",
+  "pk": 35,
+  "fields": {
+    "project": 3,
+    "image": "projects/screenshots/Screenshot_from_2026-08-07_17-09-20.png",
+    "caption": ""
+  }
+},
+{
+  "model": "core.projectimage",
+  "pk": 36,
+  "fields": {
+    "project": 3,
+    "image": "projects/screenshots/Screenshot_from_2026-08-07_17-09-31.png",
+    "caption": ""
+  }
+},
+{
+  "model": "core.projectimage",
+  "pk": 37,
+  "fields": {
+    "project": 3,
+    "image": "projects/screenshots/Screenshot_from_2026-08-07_17-09-53.png",
+    "caption": ""
+  }
+},
+{
+  "model": "core.projectimage",
+  "pk": 38,
+  "fields": {
+    "project": 5,
+    "image": "projects/screenshots/Screenshot_from_2026-08-11_16-44-11.png",
+    "caption": ""
+  }
+},
+{
+  "model": "core.projectimage",
+  "pk": 39,
+  "fields": {
+    "project": 5,
+    "image": "projects/screenshots/Screenshot_from_2026-08-11_16-45-51.png",
+    "caption": ""
+  }
+},
+{
+  "model": "core.projectimage",
+  "pk": 40,
+  "fields": {
+    "project": 5,
+    "image": "projects/screenshots/Screenshot_from_2026-08-11_16-46-08.png",
+    "caption": ""
+  }
+},
+{
+  "model": "core.projectimage",
+  "pk": 41,
+  "fields": {
+    "project": 5,
+    "image": "projects/screenshots/Screenshot_from_2026-08-11_16-46-34.png",
+    "caption": ""
+  }
+},
+{
+  "model": "core.projectimage",
+  "pk": 42,
+  "fields": {
+    "project": 5,
+    "image": "projects/screenshots/Screenshot_from_2026-08-11_16-46-42.png",
+    "caption": ""
+  }
+},
+{
+  "model": "core.projectimage",
+  "pk": 43,
+  "fields": {
+    "project": 5,
+    "image": "projects/screenshots/Screenshot_from_2026-08-11_16-46-58.png",
+    "caption": ""
+  }
+},
+{
+  "model": "core.projectimage",
+  "pk": 44,
+  "fields": {
+    "project": 5,
+    "image": "projects/screenshots/Screenshot_from_2026-08-11_16-47-06.png",
+    "caption": ""
+  }
+},
+{
+  "model": "core.projectimage",
+  "pk": 45,
+  "fields": {
+    "project": 5,
+    "image": "projects/screenshots/Screenshot_from_2026-08-11_16-47-17.png",
+    "caption": ""
+  }
+},
+{
+  "model": "core.projectimage",
+  "pk": 46,
+  "fields": {
+    "project": 5,
+    "image": "projects/screenshots/Screenshot_from_2026-08-11_16-47-28.png",
+    "caption": ""
+  }
+},
+{
+  "model": "core.projectimage",
+  "pk": 47,
+  "fields": {
+    "project": 5,
+    "image": "projects/screenshots/Screenshot_from_2026-08-11_16-47-56.png",
+    "caption": ""
+  }
+},
+{
+  "model": "core.projectimage",
+  "pk": 48,
+  "fields": {
+    "project": 5,
+    "image": "projects/screenshots/Screenshot_from_2026-08-11_16-48-03.png",
+    "caption": ""
+  }
+},
+{
+  "model": "core.projectimage",
+  "pk": 51,
+  "fields": {
+    "project": 5,
+    "image": "projects/screenshots/Screenshot_from_2026-08-11_17-06-11.png",
+    "caption": ""
+  }
+},
+{
+  "model": "core.projectimage",
+  "pk": 52,
+  "fields": {
+    "project": 5,
+    "image": "projects/screenshots/Screenshot_from_2026-08-11_17-06-24.png",
+    "caption": ""
+  }
+},
+{
+  "model": "core.projectimage",
+  "pk": 55,
+  "fields": {
+    "project": 5,
+    "image": "projects/screenshots/Screenshot_from_2026-08-11_16-48-03_t9UCjA6.png",
+    "caption": ""
+  }
+},
+{
+  "model": "core.projectimage",
+  "pk": 56,
+  "fields": {
+    "project": 5,
+    "image": "projects/screenshots/Screenshot_from_2026-08-11_16-48-42_KyfLVmR.png",
+    "caption": ""
+  }
+},
+{
+  "model": "core.projectimage",
+  "pk": 57,
+  "fields": {
+    "project": 5,
+    "image": "projects/screenshots/Screenshot_from_2026-08-11_16-52-34_y8GH6VJ.png",
+    "caption": ""
+  }
+},
+{
+  "model": "core.projectimage",
+  "pk": 58,
+  "fields": {
+    "project": 3,
+    "image": "projects/screenshots/Screenshot_from_2026-08-12_09-52-02.png",
+    "caption": ""
+  }
+},
+{
+  "model": "core.projectimage",
+  "pk": 59,
+  "fields": {
+    "project": 3,
+    "image": "projects/screenshots/Screenshot_from_2026-08-12_09-57-48.png",
+    "caption": ""
+  }
+},
+{
+  "model": "core.projectimage",
+  "pk": 61,
+  "fields": {
+    "project": 2,
+    "image": "projects/screenshots/Screenshot_from_2026-08-12_13-21-47_NBMuPMx.png",
+    "caption": ""
+  }
+},
+{
+  "model": "core.projectimage",
+  "pk": 62,
+  "fields": {
+    "project": 2,
+    "image": "projects/screenshots/Screenshot_from_2026-08-12_13-25-33.png",
+    "caption": ""
+  }
+},
+{
+  "model": "core.projectimage",
+  "pk": 63,
+  "fields": {
+    "project": 2,
+    "image": "projects/screenshots/Screenshot_from_2026-08-12_13-25-45.png",
+    "caption": ""
+  }
+},
+{
+  "model": "core.projectimage",
+  "pk": 64,
+  "fields": {
+    "project": 2,
+    "image": "projects/screenshots/Screenshot_from_2026-08-12_13-25-54.png",
+    "caption": ""
+  }
+},
+{
+  "model": "core.projectimage",
+  "pk": 65,
+  "fields": {
+    "project": 2,
+    "image": "projects/screenshots/Screenshot_from_2026-08-12_13-26-06_ajrGZnG.png",
+    "caption": ""
+  }
+},
+{
+  "model": "core.projectimage",
+  "pk": 66,
+  "fields": {
+    "project": 2,
+    "image": "projects/screenshots/Screenshot_from_2026-08-12_13-27-07.png",
+    "caption": ""
+  }
+},
+{
+  "model": "core.projectimage",
+  "pk": 67,
+  "fields": {
+    "project": 2,
+    "image": "projects/screenshots/Screenshot_from_2026-08-12_13-27-37.png",
+    "caption": ""
+  }
+},
+{
+  "model": "core.projectimage",
+  "pk": 68,
+  "fields": {
+    "project": 2,
+    "image": "projects/screenshots/Screenshot_from_2026-08-12_13-27-50.png",
+    "caption": ""
+  }
+},
+{
+  "model": "core.projectimage",
+  "pk": 69,
+  "fields": {
+    "project": 2,
+    "image": "projects/screenshots/Screenshot_from_2026-08-12_13-29-17.png",
+    "caption": ""
+  }
+},
+{
+  "model": "core.projectimage",
+  "pk": 70,
+  "fields": {
+    "project": 2,
+    "image": "projects/screenshots/Screenshot_from_2026-08-12_13-29-56.png",
+    "caption": ""
+  }
+},
+{
+  "model": "core.projectimage",
+  "pk": 71,
+  "fields": {
+    "project": 2,
+    "image": "projects/screenshots/Screenshot_from_2026-08-12_13-30-24.png",
+    "caption": ""
+  }
+},
+{
+  "model": "core.projectimage",
+  "pk": 72,
+  "fields": {
+    "project": 2,
+    "image": "projects/screenshots/Screenshot_from_2026-08-12_13-30-27.png",
+    "caption": ""
+  }
+},
+{
+  "model": "core.projectimage",
+  "pk": 73,
+  "fields": {
+    "project": 2,
+    "image": "projects/screenshots/Screenshot_from_2026-08-12_13-30-37.png",
+    "caption": ""
+  }
+},
+{
+  "model": "core.projectimage",
+  "pk": 74,
+  "fields": {
+    "project": 2,
+    "image": "projects/screenshots/Screenshot_from_2026-08-12_13-30-51.png",
+    "caption": ""
+  }
+},
+{
+  "model": "core.projectimage",
+  "pk": 75,
+  "fields": {
+    "project": 2,
+    "image": "projects/screenshots/Screenshot_from_2026-08-12_13-31-16.png",
+    "caption": ""
+  }
+},
+{
+  "model": "core.projectimage",
+  "pk": 76,
+  "fields": {
+    "project": 2,
+    "image": "projects/screenshots/Screenshot_from_2026-08-12_13-31-47.png",
+    "caption": ""
+  }
+},
+{
+  "model": "core.projectimage",
+  "pk": 77,
+  "fields": {
+    "project": 2,
+    "image": "projects/screenshots/Screenshot_from_2026-08-12_13-32-10.png",
+    "caption": ""
+  }
+},
+{
+  "model": "core.projectimage",
+  "pk": 78,
+  "fields": {
+    "project": 2,
+    "image": "projects/screenshots/Screenshot_from_2026-08-12_13-32-31.png",
+    "caption": ""
+  }
+},
+{
+  "model": "core.projectimage",
+  "pk": 79,
+  "fields": {
+    "project": 2,
+    "image": "projects/screenshots/Screenshot_from_2026-08-12_13-32-43.png",
+    "caption": ""
+  }
+},
+{
+  "model": "core.projectimage",
+  "pk": 80,
+  "fields": {
+    "project": 2,
+    "image": "projects/screenshots/Screenshot_from_2026-08-12_13-33-27.png",
+    "caption": ""
+  }
+},
+{
+  "model": "core.projectimage",
+  "pk": 81,
+  "fields": {
+    "project": 2,
+    "image": "projects/screenshots/Screenshot_from_2026-08-12_13-50-51.png",
+    "caption": ""
+  }
+},
+{
+  "model": "core.projectimage",
+  "pk": 82,
+  "fields": {
+    "project": 2,
+    "image": "projects/screenshots/Screenshot_from_2026-08-12_13-51-12.png",
+    "caption": ""
+  }
+},
+{
+  "model": "core.projectimage",
+  "pk": 83,
+  "fields": {
+    "project": 2,
+    "image": "projects/screenshots/Screenshot_from_2026-08-12_13-51-35.png",
+    "caption": ""
+  }
+},
+{
+  "model": "core.projectimage",
+  "pk": 84,
+  "fields": {
+    "project": 6,
+    "image": "projects/screenshots/Screenshot_from_2026-08-12_14-55-01.png",
+    "caption": ""
+  }
+},
+{
+  "model": "core.projectimage",
+  "pk": 85,
+  "fields": {
+    "project": 6,
+    "image": "projects/screenshots/Screenshot_from_2026-08-12_15-07-06.png",
+    "caption": ""
+  }
+},
+{
+  "model": "core.projectimage",
+  "pk": 86,
+  "fields": {
+    "project": 6,
+    "image": "projects/screenshots/Screenshot_from_2026-08-12_15-07-54.png",
+    "caption": ""
+  }
+},
+{
+  "model": "core.projectimage",
+  "pk": 87,
+  "fields": {
+    "project": 6,
+    "image": "projects/screenshots/Screenshot_from_2026-08-12_15-08-30.png",
+    "caption": ""
+  }
+},
+{
+  "model": "core.projectimage",
+  "pk": 89,
+  "fields": {
+    "project": 6,
+    "image": "projects/screenshots/Screenshot_from_2026-08-12_15-10-12.png",
+    "caption": ""
+  }
+},
+{
+  "model": "core.projectimage",
+  "pk": 90,
+  "fields": {
+    "project": 6,
+    "image": "projects/screenshots/Screenshot_from_2026-08-12_15-10-17.png",
+    "caption": ""
+  }
+},
+{
+  "model": "core.projectimage",
+  "pk": 91,
+  "fields": {
+    "project": 6,
+    "image": "projects/screenshots/Screenshot_from_2026-08-12_15-10-22.png",
+    "caption": ""
+  }
+},
+{
+  "model": "core.projectimage",
+  "pk": 92,
+  "fields": {
+    "project": 6,
+    "image": "projects/screenshots/Screenshot_from_2026-08-12_15-10-29.png",
+    "caption": ""
+  }
+},
+{
+  "model": "core.projectimage",
+  "pk": 93,
+  "fields": {
+    "project": 6,
+    "image": "projects/screenshots/Screenshot_from_2026-08-12_15-10-39.png",
+    "caption": ""
+  }
+},
+{
+  "model": "core.projectimage",
+  "pk": 94,
+  "fields": {
+    "project": 6,
+    "image": "projects/screenshots/Screenshot_from_2026-08-12_15-10-45.png",
+    "caption": ""
+  }
+},
+{
+  "model": "core.projectimage",
+  "pk": 95,
+  "fields": {
+    "project": 6,
+    "image": "projects/screenshots/Screenshot_from_2026-08-12_15-10-49.png",
+    "caption": ""
+  }
+},
+{
+  "model": "core.projectimage",
+  "pk": 96,
+  "fields": {
+    "project": 6,
+    "image": "projects/screenshots/Screenshot_from_2026-08-12_15-11-09.png",
+    "caption": ""
+  }
+},
+{
+  "model": "core.projectimage",
+  "pk": 97,
+  "fields": {
+    "project": 6,
+    "image": "projects/screenshots/Screenshot_from_2026-08-12_15-11-42.png",
+    "caption": ""
+  }
+},
+{
+  "model": "core.projectimage",
+  "pk": 98,
+  "fields": {
+    "project": 6,
+    "image": "projects/screenshots/Screenshot_from_2026-08-12_15-09-22_iQV5u4Q.png",
+    "caption": ""
   }
 }
 ]
